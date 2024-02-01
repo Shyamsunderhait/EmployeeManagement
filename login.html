@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      form {
+        width: 300px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      label {
+        margin: 5px;
+      }
+
+      input {
+        width: 100%;
+        padding: 8px;
+        margin: 8px;
+      }
+      button {
+        width: 150px;
+        padding: 8px;
+        margin: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <center><h1>Login</h1></center>
+    <form id="loginForm">
+      <label for="">Username</label>
+      <input type="text" id="username" placeholder="Enter your username" />
+      <label for="">Password</label>
+      <input type="password" id="password" placeholder="Enter your username" />
+      <button type="button" id="button" onclick="authenticate()">Login</button>
+    </form>
+
+    <script>
+      function authenticate() {
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        if ((username === "shyam") & (password === "shyam")) {
+          alert("Login Successful!!!");
+          window.location.href = "emp.html";
+        } else {
+          alert("Invalid Credentials");
+        }
+      }
+    </script>
+  </body>
+</html>
