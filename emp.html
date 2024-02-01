@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Management</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Employee Management</h1>
+    <center>
+      <button onclick="addEmployee()">Add Employee</button>
+      <button onclick="updateEmployee()">Update Employee</button>
+      <button onclick="deleteEmployee()">Delete Employee</button>
+    </center>
+    <table id="employeeTable">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Postion</th>
+        </tr>
+      </thead>
+      <tbody id="employeeBody"></tbody>
+    </table>
+    <script src="emp.js"></script>
+  </body>
+</html>
